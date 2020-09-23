@@ -1,13 +1,14 @@
 def equilateral(sides):
+
     if is_valid_triangle(sides):
         return sides[0] == sides[1] == sides[2]
-    return False
 
+    return False
 
 def isosceles(sides):
-    if is_valid_triangle(sides):
+   if is_valid_triangle(sides):
         return sides[0] == sides[1] or sides[1] == sides[2] or sides[2] == sides[0]
-    return False
+   return False
 
 
 def scalene(sides):
